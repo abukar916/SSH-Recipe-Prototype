@@ -98,3 +98,18 @@ def suggest_recipes_with_missing(fridge_contents, user_preferences=None):
 # Main function to demonstrate prototype functionality
 def main():
     fridge_contents = get_fridge_contents()
+    print("Current fridge contents:")
+    for item, quantity in fridge_contents.items():
+        print(f"{item}: {quantity}")
+
+    user_preferences = get_user_preferences()
+    print("\nUser dietary preferences:")
+    print(user_preferences)
+
+    suggested_recipes = suggest_recipes_with_missing(fridge_contents, user_preferences)
+    print("\nSuggested Recipes:")
+    for recipe in suggested_recipes:
+        print(f"- {recipe['name']} (Cooking time: {recipe['cooking_time']} mins)")
+
+if __name__ == "__main__":
+    main()
