@@ -34,6 +34,7 @@ This repository contains a Python-based prototype for a smart recipe suggestion 
 
 ## Prototype Summary
 Our team chose the Engineering Design Review by Anas Khurmani on the Recipe Suggestion System Using Fridge Data for prototype implementation. This system is supposed to enhance meal planning and reduce food wastage by the use of smart home technology. It makes use of an SSH camera that detects the contents of a fridge, then processes those through the SSH Cloud, matching them up with recipes kept in a cloud-based database. It then makes personalized recipe suggestions via a mobile app interface.
+
 Key Features:
 - Detection of the ingredients and matching for recipes.
 - Recommendations based on user preferences and available ingredients.
