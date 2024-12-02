@@ -1,6 +1,10 @@
 # ingredient_detector.py
 
+<<<<<<< HEAD
 import cv2 # type: ignore
+=======
+import cv2
+>>>>>>> 7926f6ac68e309405e5083222e7b21709e055453
 
 # Ingredient detection function (simplified)
 def detect_ingredients(image_path):
