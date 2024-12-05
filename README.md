@@ -19,7 +19,7 @@ This repository contains a Python-based prototype for a smart recipe suggestion 
 - **ingredient_detection.py**: Simulates ingredient detection based on the chosen scenario and returns a corresponding list of ingredients.
 - **recipe_suggestion_engine.py**: Implements the logic for matching available ingredients to recipes, filtering by meal type, and identifying missing ingredients.
 - **recipe_database.py**: Provides a predefined list of recipes and their required ingredients.
-- **tests**: 
+- **tests**: Contains unit tests that verify the functionality of the recipe suggestion engine, ingredient detection, and other components. Running these tests ensures that recent changes haven’t introduced regressions.
 
 ## Usage
 1. Clone the repository:
@@ -38,6 +38,10 @@ This repository contains a Python-based prototype for a smart recipe suggestion 
    -Select a fridge scenario from the dropdown menu.
    -Click "Detect Ingredients" to view suggested recipes and missing ingredients.
    
+6. Running Tests
+   ```sh
+   python -m unittest discover tests
+    ```  
 
 ## Requirements
 - Python 3.x
