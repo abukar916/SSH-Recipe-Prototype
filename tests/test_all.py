@@ -83,5 +83,5 @@ class TestRecipeSuggestionSystem(unittest.TestCase):
             suggested_recipes = suggest_recipes(ingredients, "Breakfast Items")
         self.assertEqual(len(suggested_recipes), 0)
 
-if _name_ == "_main_":
+if __name__ == "_main_":
     unittest.main()
