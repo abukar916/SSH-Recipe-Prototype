@@ -2,6 +2,9 @@
 
 This repository contains a Python-based prototype for a smart recipe suggestion system that integrates with a simulated smart fridge environment. The project aims to minimize food waste and simplify meal planning by leveraging simulated fridge data and suggesting recipes tailored to available ingredients and meal preferences.
 
+![ci](https://github.com/abukar916/SSH-Recipe-Prototype/workflows/Python%20application/badge.svg)
+***This status badge was added to show the Continous Integration status.***
+
 ## Features
 - **Ingredient Detection**: Simulates a smart fridge's camera capturing ingredient data based on user-selected scenarios.
 - **Recipe Suggestion Engine**: Suggests recipes based on the currently available ingredients, meal type preferences, and dietary options.
@@ -41,7 +44,10 @@ This repository contains a Python-based prototype for a smart recipe suggestion 
 6. Running Tests
    ```sh
    python -m unittest discover tests
-    ```  
+    ```
+
+## Continous Integration 
+This project uses GitHub Actions for continuous integration.The status badge at the top of this README reflects the current build status.
 
 ## Requirements
 - Python 3.x
