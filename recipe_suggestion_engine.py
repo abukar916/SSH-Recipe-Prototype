@@ -1,16 +1,7 @@
 from recipe_database import get_recipes
 
 def suggest_recipes(available_ingredients, scenario_name):
-    """
-    Suggests recipes based on available ingredients and the selected scenario.
-
-    Args:
-        available_ingredients (list): A list of available ingredients.
-        scenario_name (str): The name of the selected fridge scenario.
-
-    Returns:
-        list: A list of suggested recipes relevant to the scenario.
-    """
+   
     recipes = get_recipes()
 
     # Handle empty recipe database
