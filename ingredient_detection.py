@@ -1,13 +1,5 @@
 def detect_ingredients(scenario_name):
-    """
-    Simulates ingredient detection based on the fridge scenario.
-
-    Args:
-        scenario_name (str): The name of the selected fridge scenario.
-
-    Returns:
-        list: A list of detected ingredients.
-    """
+   
     fridge_scenarios = {
         'Breakfast Items': ['tomato', 'pepper', 'onion', 'salt', 'eggs', 'toast', 'tuna', 'cheese', 'olive oil'],
         'Vegetarian': ['lettuce', 'cucumber', 'tomato', 'cheese', 'olive', 'spinach', 'vegetables', 'tofu'],
