@@ -9,8 +9,8 @@ def detect_ingredients(scenario_name):
             'onions', 'garlic', 'tomatoes', 'peppers'
         ],
         'Dessert Ingredients': ['milk', 'sugar', 'flour', 'chocolate chips', 'honey', 'lotus', 'cream cheese', 'butter', 'eggs'],
-        'Default': ['water', 'juice'],  # Only water and juice
-        'Empty Fridge': []  # Empty fridge
+        'Default': ['water', 'juice'],  
+        'Empty Fridge': [] 
     }
 
     return fridge_scenarios.get(scenario_name, [])
