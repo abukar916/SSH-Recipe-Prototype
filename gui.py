@@ -4,11 +4,7 @@ from ingredient_detection import detect_ingredients
 from recipe_suggestion_engine import suggest_recipes
 
 def show_recipes():
-    """
-    Called when the "Detect Ingredients" button is clicked.
-    Retrieves the selected scenario, simulates ingredient detection,
-    gets recipe suggestions, and updates the GUI.
-    """
+   
     # Get the selected scenario from the dropdown menu
     scenario_choice = scenario_var.get()
     if not scenario_choice:
@@ -42,7 +38,7 @@ def show_recipes():
                 result_text += f"  Instructions: {recipe['instructions']}\n"
                 result_text += "\n"
 
-    # Update the result label with the results
+    
     result_label.config(state=tk.NORMAL)
     result_label.delete(1.0, tk.END)
     result_label.insert(tk.END, result_text)
@@ -56,7 +52,7 @@ def show_recipes():
 # Create the main application window
 root = tk.Tk()
 root.title("Recipe Suggestion System")
-root.geometry("600x600")  # Increased size for better layout
+root.geometry("600x600")  
 
 # Scenario selection label
 scenario_label = tk.Label(root, text="Select a fridge scenario:", font=("Helvetica", 14))
@@ -64,7 +60,7 @@ scenario_label.pack(pady=10)
 
 # Variable to hold the selected scenario
 scenario_var = tk.StringVar(root)
-scenario_var.set('Default')  # Set default value
+scenario_var.set('Default')  
 
 scenario_options = [
     'Breakfast Items',
@@ -95,11 +91,9 @@ result_label.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
 
 result_scrollbar.config(command=result_label.yview)
 
-# Disable editing of the Text widget
+
 result_label.config(state=tk.DISABLED)
 
 def run_gui():
-    """
-    Starts the Tkinter event loop.
-    """
+    
     root.mainloop()
