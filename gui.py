@@ -44,11 +44,6 @@ def show_recipes():
     result_label.insert(tk.END, result_text)
     result_label.config(state=tk.DISABLED)
 
-
-
-
-
-
 # Create the main application window
 root = tk.Tk()
 root.title("Recipe Suggestion System")
