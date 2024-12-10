@@ -12,7 +12,7 @@ def get_recipes():
             'name': 'Cheese Tuna Toast',
             'ingredients': ['toast', 'tuna', 'cheese', 'olive oil'],
             'instructions': 'Spread tuna on toast, add cheese, drizzle olive oil, and toast it.',
-            'cuisine': 'Breakfast',  # Updated to match the scenario
+            'cuisine': 'Breakfast',  
             'dietary_preferences': []
         },
 
